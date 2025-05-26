@@ -1,0 +1,43 @@
+.carousel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.featured {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.featured h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #444;
+}
+
+.product-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.product-card {
+  width: 200px;
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #fffef8;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-card p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
