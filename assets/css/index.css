@@ -1,8 +1,9 @@
 .carousel img {
   width: 100%;
   height: auto;
-  display: block;
+  object-fit: cover;
 }
+
 
 .featured {
   padding: 2rem;
