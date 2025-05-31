@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心</title>
+    <link rel="stylesheet" href="member-center.css">
+    <!-- 
+    <link rel="stylesheet" href="../assets/css/member-center.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    -->
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="logo-title" onclick="location.href='index.html'">
+        <img src="../assets/images/logo.png" alt="一匙糖 Logo" class="logo">
+        </div>
+        <div class="header-right">
+            <nav class="nav-links">
+            <a href="round-cakes.html">圓蛋糕</a>
+            <a href="loaf-cakes.html">長條蛋糕</a>
+            <a href="slices.html">單片蛋糕</a>
+            </nav>
+            <div class="nav-icons">
+            <a href="#"><img src="../assets/images/search.png" alt="搜尋"></a>
+            <a href="cart.html"><img src="../assets/images/cart.png" alt="購物車"></a>
+            <a href="login.html"><img src="../assets/images/user.png" alt="會員"></a>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="main">
+        <nav class="bar">
+            <ul>
+                <li data-target="personal" class="active">我的帳戶</li> <!--指定「點這個選單要顯示哪一個區塊」;預設有這個 class 的項目會有背景變色-->
+                <li data-target="record">訂單紀錄</li>
+                <li data-target="question">常見問題</li>
+                <li data-target="contacts">客服中心</li>
+            </ul>
+        </nav>
+        <div class="article">
+            <div class="section" id="personal"> 
+                <h2>我的帳戶</h2> <br><hr><br>
+                <form method="post" action="">
+                    <label for="name">姓名</label><br> 
+                    <input type="text" name="name" id="name" placeholder="請輸入姓名" required /><br>
+                    <label for="sex">性別</label>
+                    <div class="checkbox-label">
+                        <input type="radio" name="sex" id="male" value="男" checked/>男
+                        <input type="radio" name="sex" id="female" value="女" checked/>女
+                        <input type="radio" name="sex" id="private" value="不公開" checked/>不公開 
+                    </div><br>
+                    <label for="birthdate">生日</label>
+                    <input type="date">
+                    <div class="two-column">
+                        <label for="phone" class="checkbox-label">手機號碼 ： <!--點擊 label 文字可以自動「聚焦」到對應欄位（或觸發勾選）-->
+                        09********</label><br><br>
+                        <label for="email" class="right-column">電子郵件 ：
+                        123456789@gmail.com</label><br><br>
+                    </div>
+                    <p>重設密碼請<a href="../resetpassword/resetpassword.html">按此</a></p><br>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="accept" id="accept"> 同意個人資料使用規範
+                    </label>
+                    <input type="submit" value="儲存"/>  <br>
+                </form>
+            </div>
+            <div class="section hidden" id="record"> 
+                <h2>訂單紀錄</h2> <br><hr><br>
+                <h3>歷史訂單</h3>
+                <br><hr><br>
+                <div class="two-column">
+                    <img src="../assets/images/fruitcake1.jpg" alt="春日果園裸蛋糕">
+                    <div class="right-column">
+                        訂購品項：春日果園裸蛋糕 12吋<br>
+                        件數：1 <br>
+                        訂購日期：2025/1/4 <br>
+                        訂單狀態：已於 2025/1/17 完成訂單 <br>
+                        付款方式:匯款 <br>
+                        總金額：$850 <br>
+                    </div>
+                </div>
+                <br><hr><br>
+                <div class="two-column" >
+                    <img src="../assets/images/coffeecake2.jpg" alt="焦糖咖啡戚風蛋糕">
+                    <div class="right-column" >
+                        訂購品項：焦糖咖啡戚風蛋糕 8吋 <br>
+                        件數：1 <br>
+                        訂購日期：2024/10/4 <br>
+                        訂單狀態：已於 2025/11/1 完成訂單 <br>
+                        付款方式:匯款 <br>
+                        總金額：$450 <br>
+                    </div>
+                </div><br>
+                <h3>退換貨紀錄</h3>
+                <br><hr><br>
+                <div class="two-column" >
+                    <img src="../assets/images/coffeecake2.jpg" alt="焦糖咖啡戚風蛋糕">
+                    <div class="right-column" >
+                        退貨品項：焦糖咖啡戚風蛋糕 6吋<br>
+                        件數：1 <br>
+                        退貨原因：選錯尺寸
+                        退貨日期：2024/10/17 <br>
+                        訂單狀態：已於 2025/10/25 完成退貨 <br>
+                        退款方式:匯款 <br>
+                        總金額：$300 <br>
+                    </div>
+                </div><br>
+            </div>
+            <div class="section hidden" id="question"> 
+                <h2>常見問題</h2> <br><hr><br>
+                <ul>
+                    <li><h3>Q1：蛋糕價格是多少？有沒有隱藏費用？</h3><br><hr><br>
+                        A1：我們所有商品均標明售價，無額外手續費。若需加購蠟燭或生日卡，會於結帳頁顯示加購項目。
+                    </li><br><hr><br>
+                    <li><h3>Q2：可以取消或更改訂單嗎？</h3><br><hr><br>
+                        A2：如需取消或更改訂單，請於出貨前24小時內聯絡客服，我們會盡力協助處理。
+                    </li><br><hr><br>
+                    <li><h3>Q3：蛋糕壞掉或配送有問題怎麼辦？</h3><br><hr><br>
+                        A3：若您收到蛋糕時有破損、解凍或品質異常，請立即拍照並聯絡我們，我們將提供補寄或退款服務。
+                    </li><br><hr><br>
+                    <li><h3>Q4：蛋糕保存期限與方式？</h3><br><hr><br>
+                        A4：蛋糕建議於冷藏保存並於2天內食用完畢，口感最佳；慕斯類請勿冷凍保存以免變質。
+                    </li><br><hr><br>
+                    <li><h3>Q5：請問有配送服務嗎？</h3><br><hr><br>
+                        A5：我們提供台北市與新北市部分地區冷藏配送，配送時段為每日13:00-18:00。
+                    </li><br><hr><br>
+                </ul>
+            </div><div class="section hidden" id="contacts"> 
+                <h2>客服中心</h2> <br><hr><br>
+                <p>
+                    若您對一匙糖的通路合作或商品有任何的問題，歡迎填寫表單與我們聯絡！<br>
+                     也可直接來信至： aspoonfulofsugar@gmail.com
+                </p><br>
+                <form method="post" action="">
+                    <label for="name">姓名</label><br> 
+                    <input type="text" name="name" id="name" placeholder="請輸入姓名" required /><br>
+                    <label for="phone">手機號碼</label><br> <!--點擊 label 文字可以自動「聚焦」到對應欄位（或觸發勾選）-->
+                    <input type="tel" name="phone" id="phone" placeholder="請輸入常用手機號碼" required /><br>
+                    <label for="email">電子郵件</label><br> 
+                    <input type="email" name="email" id="email" placeholder="請輸入常用電子郵件" required /><br>                    
+                    <label for="purpose">信件主旨</label><br>
+                    <input type="text" name="purpose" id="purpose" placeholder="請輸入信件主旨"><br>
+                    <label for="content">信件內容</label><br>
+                    <textarea name="content" id="content" placeholder="請輸入信件內容"></textarea>
+                    <input type="submit" value="送出"/>  <br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-left" onclick="location.href='index.html'">
+        <img src="../assets/images/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="footer-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2566067218154!2d121.23819610939643!3d24.957382677773797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221447a0f021%3A0x2b86d2650bb8bcff!2z5Lit5Y6f5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1748163150785!5m2!1szh-TW!2stw" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer-info">
+        <p><strong>「一匙糖」蛋糕專賣店</strong></p>
+        <p>營業時間：每日 12:00 - 20:00</p>
+        <p>連絡電話：02-1234-5678</p>
+        <p>門市地址：桃園市中壢區中北路200號</p>
+        </div>
+    </footer>
+
+    <script src="member-center.js"></script>
+
+</body>
+</html>
