@@ -12,3 +12,30 @@ item.addEventListener("click", () => {
     document.getElementById(targetId).classList.remove("hidden");
     });
 });
+
+document.addEventListener("DOMContentLoaded", function(){ //監聽觸發事件
+    const starRatings = document.querySelectorAll(".star");
+    //對每個評分設定事件
+    starRatings.forEach((starRating) =>{
+        //找每個評分內所有的icon
+        const starIcons = starRating.querySelectorAll(".star-icon");
+        //對每個icon加上click事件
+        starIcons.forEach((starIcon) => {
+            starIcon.addEventListener("click", function() {
+            //找clicked icon的data-index並轉成數字
+            const clickedIndex = parseInt(this.getAttribute("data-index"));
+
+            // starIcons是陣列，用forEach判斷 跑迴圈
+            starIcons.forEach((icon, index)=>{
+                if (index < clickedIndex){
+                    icon.setAttribute("icon", "material-symbols:star");
+                }
+                else{
+                    icon.setAttribute("icon", "material-symbols:star-outline");
+                }
+            })
+            })
+
+        })
+    })
+})

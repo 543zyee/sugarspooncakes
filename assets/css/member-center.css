@@ -107,6 +107,21 @@ img{
 
 }
 
+/*星星評分系統*/
+
+.star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.star-icon{
+    color:#ffbc00;
+    font-size: 40px;
+    cursor: pointer;
+}
+
 footer{
     padding: 15px;
     text-align: center;
