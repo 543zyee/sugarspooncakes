@@ -1,0 +1,112 @@
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #fffefc;
+    color: #3e3e3e;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.content{
+  padding: 20px;
+  padding-top: 20px; 
+}
+.container {
+  display: flex;
+  gap: 40px;
+}
+.product-img {
+  width: 550px;        
+  height: 400px;       
+  /*overflow: hidden;*/
+  border-radius: 10px;
+      
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.prev,.next{
+
+position: absolute;
+top:50%;
+padding: 20px;
+width: auto;
+
+color: white;
+font-size: 30px;
+border-radius: 3px;
+transition: 0.6s ease;
+top:350px
+  
+}
+.next{
+  right: 695px;
+  top:350px
+}
+.prev:hover, .next:hover{
+  background-color: #807f7f;
+}
+
+.active, .dot:hover{
+  background-color: #383737;
+}
+
+.product-info {
+  flex: 1;
+}
+.product-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.product-info p {
+  color: #555;
+}
+.input-group {
+  margin: 10px 0;
+}
+input, select {
+  padding: 5px;
+  margin-left: 10px;
+}
+.price {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+.btn {
+  background: #8a5c42;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.people{
+  font-weight: bold;
+}
+.reviews {
+  margin-top: 40px;
+  padding: 40px;
+}
+.review {
+  border-bottom: 1px solid #bab2ad;
+  padding: 10px 0;
+}
+.stars {
+  color: gold;
+}
+.comment-box {
+  margin-top: 20px;
+  padding: 0px 40px 20px 40px;
+}
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+}
