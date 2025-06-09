@@ -4,15 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>皇家莓果生巧夾心蛋糕</title>
-  <link rel="stylesheet" href="BerryChocoCake.css"><!--這裡的註解可刪 姿儀到此一遊-->
+  <link rel="stylesheet" href="../../assets/css/loaf/BerryChocoCake.css">
   <link rel="stylesheet" href="../../assets/css/common.css"><!--路徑已修正 可以參考這邊的修改-->
-  <link rel="stylesheet" href="../../assets/css/index.css"><!--下面的修改不再寫註解 自行參考 謝謝辛苦了-->
+  <link rel="stylesheet" href="../../assets/css/index.css">
+  <script src="../../assets/js/BerryChocoCake.js" defer></script>
 </head>
+<script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
 <body>
-
   <!-- Header -->
   <header class="site-header">
-    <div class="logo-title" onclick="location.href='index.html'">
+    <div class="logo-title" onclick="location.href='../../index.html'">
       <img src="../../assets/images/LOGO/logo.png" alt="一匙糖 Logo" class="logo">
     </div>
       <div class="header-right">
@@ -23,65 +24,132 @@
         </nav>
         <div class="nav-icons">
           <a href="#"><img src="../../assets/images//icon/search.png" alt="搜尋"></a>
-          <a href="cart.html"><img src="../../assets/images/icon/cart.png" alt="購物車"></a>
-          <a href="login.html"><img src="../../assets/images/icon/user.png" alt="會員"></a>
+          <a href="../cart.html"><img src="../../assets/images/icon/cart.png" alt="購物車"></a>
+          <a href="../login.html"><img src="../../assets/images/icon/user.png" alt="會員"></a>
         </div>
       </div>
   </header>
 
-  <div class="container">
-    <div class="product-img">
-      <img src="../../assets/images/LoafCakes/0ya5g2kd.png">
+  <div class="content">
+    <div class="container">
+      <div class="slideshow-container">
+        <div class="product-img">
+          <img src="../../assets/images/LoafCakes/LoafB1.png"/>
+        </div>
+        <div class="product-img">
+          <img src="../../assets/images/LoafCakes/LoafB2.png"/>
+        </div>
+        <div class="product-img">
+          <img src="../../assets/images/LoafCakes/LoafB3.png"/>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❰</a>
+        <a class="next" onclick="plusSlides(1)">❱</a>
+      </div>
+      <div class="product-info">
+        <h1>皇家莓果生巧夾心蛋糕</h1>
+        <p>在春寒料峭的清晨，一杯熱紅茶與新鮮莓果總能喚醒沉睡的心緒。這款蛋糕靈感來自於那份「想把日常過得像節日」的心意，酸甜莓果層層交疊，包裹著絲滑生巧，如同晨光穿過窗紗，溫柔卻明亮。每一口，都是生活中不經意的驚喜與浪漫。
+        </p>
+        <div class="input-group">
+          訂購數量：<input type="number" value="1" min="1">
+        </div>
+        <div class="input-group">
+          訂購尺寸：
+          <select>
+            <option>經典 4 吋</option>
+            <option>分享 6 吋</option>
+            <option>派對 8 吋</option>
+          </select>
+        </div>
+        <div class="input-group">
+          取貨時間：<input type="date">
+        </div>
+        <div class="price">$ 299</div>
+        <button class="btn" id="btn">購買</button>
+      </div>
     </div>
-    <div class="product-info">
-      <h1>皇家莓果生巧夾心蛋糕</h1>
-      <p>在秋日微涼的午後，一杯拿鐵和幾片焦糖餅乾總是最簡單卻溫暖的慰藉。這款蛋糕靈感來自於那份「想與你分享溫柔時光」的情懷，焦糖醬緩緩流下，如同時間靜靜流淌，溫柔地包裹著生活的甜。</p>
-      <div class="input-group">
-        訂購數量：<input type="number" value="1" min="1">
-      </div>
-      <div class="input-group">
-        訂購尺寸：
-        <select>
-          <option>經典 4 吋</option>
-          <option>分享 6 吋</option>
-          <option>派對 8 吋</option>
-        </select>
-      </div>
-      <div class="input-group">
-        取貨時間：<input type="date">
-      </div>
-      <div class="price">$ 499</div>
-      <button class="btn">購買</button>
-    </div> 
   </div>
-
+    
   <div class="reviews">
-    <h3>顧客評論</h3>
+    <h2>顧客評論</h2>
     <div class="review">
+      <div class="people"><p>會員:王大明</p></div>
       <div class="stars">★★★★★</div>
       <p>超好吃！莓果與生巧克力完美融合。</p>
     </div>
     <div class="review">
+      <div class="people"><p>會員:張曉明</p></div>
+      <div class="stars">★★★☆☆</div>
+        <p>蛋糕不難吃，但可能不是我喜歡的類型，沒有不好，就是不會特別想再買一次。</p>
+      </div>
+    <div class="review">
+      <div class="people"><p>會員:成小美</p></div>
       <div class="stars">★★★★☆</div>
       <p>口感綿密，甜而不膩，很適合秋天。</p>
     </div>
     <div class="review">
+      <div class="people"><p>會員:高大成</p></div>
+      <div class="stars">★★★★☆</div>
+      <p>內餡很扎實，口感層次分明，推薦給喜歡莓果和巧克力的人。</p>
+    </div>
+    <div class="review">
+      <div class="people"><p>會員:蔡大頭</p></div>
       <div class="stars">★★★☆☆</div>
       <p>還不錯，但希望莓果可以再多一些～</p>
     </div>
-
+    <div class="review">
+      <div class="people"><p>匿名用戶</p></div>
+      <div class="stars">★★★★</div>
+      <p>超級好吃～下次會繼續回購的!</p>
+    </div>
+    <div class="review">
+      <div class="people"><p>會員:江大同</p></div>
+      <div class="stars">★★★☆☆</div>
+      <p>朋友推薦才買的，口感確實綿密，只是期待值太高，實際吃起來就覺得還行。</p>
+    </div>
+    
     <div class="comment-box">
+      <h2>請留下您的評論</h2>
+      <div class="star" id="star-rating1">
+        <iconify-icon icon="material-symbols:star-outline" 
+        width="24"
+        height="24"
+        data-index="1" 
+        style="color: gold"
+        class="star-icon"></iconify-icon>
+        <iconify-icon icon="material-symbols:star-outline" 
+        width="24"
+        height="24" 
+        data-index="2" 
+        style="color:gold"
+        class="star-icon"></iconify-icon>
+        <iconify-icon icon="material-symbols:star-outline" 
+        width="24"
+        height="24"
+        data-index="3"  
+        style="color: gold"
+        class="star-icon"></iconify-icon>
+        <iconify-icon icon="material-symbols:star-outline" 
+        width="24"
+        height="24" 
+        data-index="4" 
+        style="color:gold"
+        class="star-icon"></iconify-icon>
+        <iconify-icon icon="material-symbols:star-outline" 
+        width="24"
+        height="24" 
+        data-index="5" 
+        style="color: gold"
+        class="star-icon"></iconify-icon>
+      </div>
+
       <textarea placeholder="留下您的評論..."></textarea>
-      <!--<div class="stars">
-        <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-      </div>-->
       <button class="btn">送出</button>
     </div>
   </div>
-
+  
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="footer-left" onclick="location.href='index.html'">
+    <div class="footer-left" onclick="location.href='../../index.html'">
       <img src="../../assets/images/LOGO/logo.png" alt="Logo" class="logo">
     </div>
     <div class="footer-map">
