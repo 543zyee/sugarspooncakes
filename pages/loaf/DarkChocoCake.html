@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>極致濃可可生巧蛋糕</title>
+  <link rel="stylesheet" href="../../assets/css/loaf/BerryChocoCake.css">
+  <link rel="stylesheet" href="../../assets/css/common.css"><!--路徑已修正 可以參考這邊的修改-->
+  <link rel="stylesheet" href="../../assets/css/index.css">
+  <script src="../../assets/js/BerryChocoCake.js" defer></script>
+</head>
+<script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo-title" onclick="location.href='../../index.html'">
+      <img src="../../assets/images/LOGO/logo.png" alt="一匙糖 Logo" class="logo">
+    </div>
+      <div class="header-right">
+        <nav class="nav-links">
+          <a href="round-cakes.html">圓蛋糕</a>
+          <a href="loaf-cakes.html">長條蛋糕</a>
+          <a href="slices.html">單片蛋糕</a>
+        </nav>
+        <div class="nav-icons">
+          <a href="#"><img src="../../assets/images//icon/search.png" alt="搜尋"></a>
+          <a href="../cart.html"><img src="../../assets/images/icon/cart.png" alt="購物車"></a>
+          <a href="../login.html"><img src="../../assets/images/icon/user.png" alt="會員"></a>
+        </div>
+      </div>
+  </header>
+
+  <div class="content">
+    <div class="container">
+      <div class="slideshow-container">
+        <div class="product-img">
+          <img src="../../assets/images/LoafCakes/LoafC1.png"/>
+        </div>
+        <div class="product-img">
+          <img src="../../assets/images/LoafCakes/LoafC2.png"/>
+        </div>
+        <div class="product-img">
+          <img src="../../assets/images/LoafCakes/LoafC3.png"/>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❰</a>
+        <a class="next" onclick="plusSlides(1)">❱</a>
+      </div>
+      <div class="product-info">
+        <h1>極致濃可可生巧蛋糕</h1>
+        <p>在寂靜的深夜裡，萬籟無聲，只剩心底那一點點說不出口的思念。這款蛋糕是留給黑夜的情書，濃郁巧克力如夜色般深沈，生巧餡緩緩融化，彷彿那些沒說出口的話語，靜靜流入心裡。適合獨自享受，也適合與那個總是懂你的人，慢慢分享。
+        </p>
+        <div class="input-group">
+          訂購數量：<input type="number" value="1" min="1">
+        </div>
+        <div class="input-group">
+          訂購尺寸：
+          <select>
+            <option>經典 4 吋</option>
+            <option>分享 6 吋</option>
+            <option>派對 8 吋</option>
+          </select>
+        </div>
+        <div class="input-group">
+          取貨時間：<input type="date">
+        </div>
+        <div class="price">$ 299</div>
+        <button class="btn" id="btn">購買</button>
+      </div>
+    </div>
+  </div>
+    
+  <div class="reviews">
+    <h2>顧客評論</h2>
+    <div class="review">
+      <div class="people"><p>會員:陳大多</p></div>
+      <div class="stars">★★★☆☆</div>
+      <p>適合重度巧克力愛好者，我個人比較喜歡再輕盈一點的口味。</p>
+    </div>
+    <div class="review">
+      <div class="people"><p>會員:曾尤蔚</p></div>
+      <div class="stars">★★★☆☆</div>
+        <p>蛋糕不難吃，但可能不是我喜歡的類型，沒有不好，就是不會特別想再買一次。</p>
+      </div>
+    <div class="review">
+      <div class="people"><p>會員:成大美</p></div>
+      <div class="stars">★★★★☆</div>
+      <p>口感綿密，甜而不膩，很適合秋天。</p>
+    </div>
+    <div class="review">
+      <div class="people"><p>會員:高小成</p></div>
+      <div class="stars">★★★★☆</div>
+      <p>質地很紮實，口感也不錯，但整體味道比較單一，吃一小塊就滿足了。</p>
+    </div>
+    <div class="review">
+      <div class="people"><p>會員:蔡大頭</p></div>
+      <div class="stars">★★★☆☆</div>
+      <p>巧克力真的很濃，不過對我來說有點太甜了，吃多會膩。</p>
+    </div>
+    <div class="review">
+      <div class="people"><p>會員:徐成浩</p></div>
+      <div class="stars">★★★★★</div>
+      <p>超級好吃～下次會繼續回購的!</p>
+    </div>
+    <div class="review">
+      <div class="people"><p>會員:江小同</p></div>
+      <div class="stars">★★★☆☆</div>
+      <p>外觀精緻，吃起來還行，不難吃，但也沒有到讓我驚艷的程度。</p>
+    </div>
+    
+    <div class="comment-box">
+      <h2>請留下您的評論</h2>
+      <div class="star" id="star-rating1">
+        <iconify-icon icon="material-symbols:star-outline" 
+        width="24"
+        height="24"
+        data-index="1" 
+        style="color: gold"
+        class="star-icon"></iconify-icon>
+        <iconify-icon icon="material-symbols:star-outline" 
+        width="24"
+        height="24" 
+        data-index="2" 
+        style="color:gold"
+        class="star-icon"></iconify-icon>
+        <iconify-icon icon="material-symbols:star-outline" 
+        width="24"
+        height="24"
+        data-index="3"  
+        style="color: gold"
+        class="star-icon"></iconify-icon>
+        <iconify-icon icon="material-symbols:star-outline" 
+        width="24"
+        height="24" 
+        data-index="4" 
+        style="color:gold"
+        class="star-icon"></iconify-icon>
+        <iconify-icon icon="material-symbols:star-outline" 
+        width="24"
+        height="24" 
+        data-index="5" 
+        style="color: gold"
+        class="star-icon"></iconify-icon>
+      </div>
+
+      <textarea placeholder="留下您的評論..."></textarea>
+      <button class="btn">送出</button>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-left" onclick="location.href='../../index.html'">
+      <img src="../../assets/images/LOGO/logo.png" alt="Logo" class="logo">
+    </div>
+    <div class="footer-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2566067218154!2d121.23819610939643!3d24.957382677773797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221447a0f021%3A0x2b86d2650bb8bcff!2z5Lit5Y6f5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1748163150785!5m2!1szh-TW!2stw" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer-info">
+      <p><strong>「一匙糖」蛋糕專賣店</strong></p>
+      <p>營業時間：每日 12:00 - 20:00</p>
+      <p>連絡電話：02-1234-5678</p>
+      <p>門市地址：桃園市中壢區中北路200號</p>
+    </div>
+  </footer>
+</body>
+</html>
+
