@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>經典黑森林蛋糕</title>
+  <link rel="stylesheet" href="../../assets/css/common.css"><!--路徑已修正 可以參考這邊的修改-->
+  <link rel="stylesheet" href="../../assets/css/index.css">
+  <link rel="stylesheet" href="../../assets/css/round/BlackForestCake.css">
+  <script src="../../assets/js/BlackForestCake.js" defer></script>
+</head>
+<script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo-title" onclick="location.href='../../index.html'">
+      <img src="../../assets/images/LOGO/logo.png" alt="一匙糖 Logo" class="logo">
+    </div>
+      <div class="header-right">
+        <nav class="nav-links">
+          <a href="round-cakes.html">圓蛋糕</a>
+          <a href="loaf-cakes.html">長條蛋糕</a>
+          <a href="slices.html">單片蛋糕</a>
+        </nav>
+        <div class="nav-icons">
+          <a href="#"><img src="../../assets/images//icon/search.png" alt="搜尋"></a>
+          <a href="../cart.html"><img src="../../assets/images/icon/cart.png" alt="購物車"></a>
+          <a href="../login.html"><img src="../../assets/images/icon/user.png" alt="會員"></a>
+        </div>
+      </div>
+  </header>
+
+  <div class="content">
+    <div class="container">
+      <div class="slideshow-container">
+        <div class="product-img">
+          <img src="../../assets/images/RoundCakes/chocolatecake1.jpg"/>
+        </div>
+        <div class="product-img" id="photo">
+          <img src="../../assets/images/RoundCakes/chocolatecake2.jpg"/>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❰</a>
+        <a class="next" onclick="plusSlides(1)">❱</a>
+      </div>
+      <div class="product-info">
+        <h1>經典黑森林蛋糕</h1>
+        <p>靈感來自一場深秋的山林散步，空氣中瀰漫著濃濃的森林氣息與野莓的清甜。這款蛋糕是大自然的再現——苦甜巧克力碎片如林中落葉，豐富莓果像是偶然發現的野果寶藏，搭配濃郁奶油與櫻桃內餡，每一口都是森林的低語。
+        </p>
+        <div class="input-group">
+          訂購數量：<input type="number" value="1" min="1">
+        </div>
+        <div class="input-group">
+          訂購尺寸：
+          <select>
+            <option>小(s) 6 吋</option>
+            <option>中(M) 8 吋</option>
+            <option>大(L) 12 吋</option>
+          </select>
+        </div>
+        <div class="input-group">
+          取貨時間：<input type="date">
+        </div>
+        <div class="price">$ 399</div>
+        <button class="btn" id="btn">購買</button>
+      </div>
+    </div>
+  </div>
+    
+  <div class="reviews">
+    <h2>顧客評論</h2>
+    <div class="review">
+      <div class="people"><p>會員:高芳心</p></div>
+      <div class="stars">★★★★☆</div>
+      <p>櫻桃搭配巧克力一向是我的愛，這款吃起來順口，甜而不膩，很滿意</p>
+    </div>
+    <div class="review">
+      <div class="people"><p>會員:曾宇婕</p></div>
+      <div class="stars">★★★☆☆</div>
+        <p>味道不錯但略為普通，沒有讓我特別驚豔，但作為下午茶還是合格的。</p>
+      </div>
+    <div class="review">
+      <div class="people"><p>會員:周美惠</p></div>
+      <div class="stars">★★★★☆</div>
+      <p>好久沒吃到這麼經典的黑森林蛋糕了！每一口都讓我想起小時候的味道。</p>
+    </div>
+    <div class="review">
+      <div class="people"><p>會員:黃大坪</p></div>
+      <div class="stars">★★★★☆</div>
+      <p>質地很紮實，口感也不錯，但整體味道比較單一，吃一小塊就滿足了。</p>
+    </div>
+
+    <div class="comment-box">
+      <h2>請留下您的評論</h2>
+      <div class="star" id="star-rating1">
+        <iconify-icon icon="material-symbols:star-outline" 
+        width="24"
+        height="24"
+        data-index="1" 
+        style="color: gold"
+        class="star-icon"></iconify-icon>
+        <iconify-icon icon="material-symbols:star-outline" 
+        width="24"
+        height="24" 
+        data-index="2" 
+        style="color:gold"
+        class="star-icon"></iconify-icon>
+        <iconify-icon icon="material-symbols:star-outline" 
+        width="24"
+        height="24"
+        data-index="3"  
+        style="color: gold"
+        class="star-icon"></iconify-icon>
+        <iconify-icon icon="material-symbols:star-outline" 
+        width="24"
+        height="24" 
+        data-index="4" 
+        style="color:gold"
+        class="star-icon"></iconify-icon>
+        <iconify-icon icon="material-symbols:star-outline" 
+        width="24"
+        height="24" 
+        data-index="5" 
+        style="color: gold"
+        class="star-icon"></iconify-icon>
+      </div>
+
+      <textarea placeholder="留下您的評論..."></textarea>
+      <button class="btn">送出</button>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-left" onclick="location.href='../../index.html'">
+      <img src="../../assets/images/LOGO/logo.png" alt="Logo" class="logo">
+    </div>
+    <div class="footer-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2566067218154!2d121.23819610939643!3d24.957382677773797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221447a0f021%3A0x2b86d2650bb8bcff!2z5Lit5Y6f5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1748163150785!5m2!1szh-TW!2stw" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer-info">
+      <p><strong>「一匙糖」蛋糕專賣店</strong></p>
+      <p>營業時間：每日 12:00 - 20:00</p>
+      <p>連絡電話：02-1234-5678</p>
+      <p>門市地址：桃園市中壢區中北路200號</p>
+    </div>
+  </footer>
+</body>
+</html>
+
