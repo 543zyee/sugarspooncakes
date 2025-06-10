@@ -21,3 +21,11 @@ form.addEventListener("submit", function(event) {
         return;
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // 防POST 
+        window.location.href = "../member-center.html"; 
+    });
+});
