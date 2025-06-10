@@ -36,6 +36,12 @@ form.addEventListener("submit", function(event) {
         event.preventDefault(); // 阻止表單送出
         return;
     }
+    //同意規範才可送出
+    if (!this.acceptCharset.checked) {
+        alert("尚未同意使用規範");
+        event.preventDefault(); // 阻止表單送出
+        return;
+    }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
