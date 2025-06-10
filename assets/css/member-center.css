@@ -20,11 +20,11 @@ header{
 #main{
     display: flex;
     flex: 1;
-    background-color: #f1ead0;
+    background-color: #fffefc;
 }
 
 .bar{
-    background-color: #f1ead0;
+    background-color: #fffaf3;
     width: 200px;
 }
 
@@ -50,8 +50,9 @@ a{
 
 .article{
     flex: 1; /*占滿剩下空間*/
-    background-color: #f1ead0;
+    background-color: #fffefc;
     padding: 20px;
+    border: 1px solid #ccc;
 }
 
 .article h2{
