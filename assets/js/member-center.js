@@ -38,28 +38,7 @@ document.addEventListener("DOMContentLoaded", function(){ //監聽觸發事件
 
         })
     })
-})
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    const checkbox=document.getElementById("showpassword1");
-    const passwordInput=document.getElementById("password");
-
-    checkbox.addEventListener("change" , ()=>{
-        passwordInput.type=checkbox.checked? "text":"password" ;
-        }
-    );
-
-    //顯示密碼 密碼轉文字
-    const confirm_checkbox = document.getElementById("showpassword2");
-    const confirm_passwordInput = document.getElementById("confirm-password");
-
-    confirm_checkbox.addEventListener("change", () => {
-        confirm_passwordInput.type = confirm_checkbox.checked ? "text" : "password";
-        }
-    );
-
-    //密碼識別功能
+    
     const form = document.querySelector("form"); //找到網頁中的表單，把它存進 form 這個變數裡
     const acceptrule = document.getElementById("accept"); 
 
@@ -76,5 +55,4 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "../index.html"; 
 
     });
-
-});
+})
