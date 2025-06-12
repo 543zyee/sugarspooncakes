@@ -10,7 +10,6 @@ img {
   object-fit: cover;
   width: 100%;
   height: auto; /* 輪播高度 */
-  max-height: 400px;
 }
 
 .carousel-wrapper {
