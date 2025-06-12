@@ -67,13 +67,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         //同意規範才可送出
         if (!acceptrule.checked) {
-            alert("尚未同意使用規範");
+            alert("尚未同意個人資料使用規範");
             event.preventDefault(); // 阻止表單送出
             return;
         }
 
         event.preventDefault(); // 防post
-        window.location.href = "member-center.html"; 
+        window.location.href = "../index.html"; 
 
     });
 
