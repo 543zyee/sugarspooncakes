@@ -38,21 +38,29 @@ document.addEventListener("DOMContentLoaded", function(){ //監聽觸發事件
 
         })
     })
-    
-    const form = document.querySelector("form"); //找到網頁中的表單，把它存進 form 這個變數裡
+
+    // 會員資料表單
+    const personalForm = document.querySelector("#personal form"); //找到網頁中的表單，把它存進 form 這個變數裡
     const acceptrule = document.getElementById("accept"); 
 
-    form.addEventListener("submit", function(event) {
-
-        //同意規範才可送出
+    personalForm.addEventListener("submit", function(event) {
         if (!acceptrule.checked) {
             alert("尚未同意個人資料使用規範");
-            event.preventDefault(); // 阻止表單送出
+            event.preventDefault();
             return;
         }
-
-        event.preventDefault(); // 防post
+        event.preventDefault();
         window.location.href = "../index.html"; 
-
     });
+
+    // 客服中心表單
+    const contactForm = document.querySelector("#contacts form");
+    contactForm.addEventListener("submit", function(event) {
+        // 這裡如果你希望真的送出就不用 preventDefault()
+        // 如果你還是要跳轉：
+        event.preventDefault();
+        window.location.href = "../index.html"; 
+    });
+
+
 })
