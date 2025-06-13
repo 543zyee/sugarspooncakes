@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const wrapper = document.querySelector('.carousel-wrapper');
-  const images = document.querySelectorAll('.carousel-wrapper img');
+  const images = document.querySelectorAll('.carousel-wrapper a');
   const dotsContainer = document.querySelector('.carousel-dots');
   const total = images.length;
   let index = 0;
